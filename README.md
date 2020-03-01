@@ -1,4 +1,4 @@
-# Project 2 - Ames Housing Data and Kaggle Challenge
+# Project 3 - Classifying Subreddit Posts: Web APIs & NLP
 
 Kelly Slatery
 US-DSI-10
@@ -38,7 +38,7 @@ The 1960's bore witness to a music revolution like no one had ever seen before--
 
 ## Executive Summary
 
-In this project, we explore data collected through Reddit's Pushshift API to classify posts to either the Beatles or Queen subreddit. The data analyzed consists of the most recent 20,000 posts (submissions) from either subreddit as of Tuesday morning January 28th. As the request limit for Reddit's Pushshift API is 200 requests per minute (with 500 posts/submissions per request), all of the data for this notebook was collected without issue in under a minute. 
+In this project, we explore data collected through Reddit's Pushshift API to classify posts to either the Beatles or Queen subreddit. The data analyzed consists of the most recent 20,000 posts (submissions) from either subreddit as of Tuesday morning January 28th. As the request limit for Reddit's Pushshift API is 200 requests per minute (with 500 posts/submissions per request), all of the data for this notebook was collected without issue in under a minute.
 
 In order to classify posts, some initial data cleaning and NLP parsing were required before beginning to model using both Count Vectorizers and TFIDF (Term Frequency Inverse Document Frequency) Vectorizers. Seven different classification models were tested using various parameter search methods and all but one with both type of vectorizer to determine which combination of vectorizer, model type, and hyperparameters yielded the most accurate model.
 
