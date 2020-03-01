@@ -1,0 +1,19 @@
+,Column Name,Data Type,Modifications,Description
+0,author,object,None,Author of post/submission
+1,author_flair_text,object,None,Non-ascii parts of author username
+2,created_utc,int64,None,Time post was created in UTC
+3,score,int64,None,Aggregate sum of upvotes and downvotes (no negatives)
+4,selftext,object,Nulls replaced with '-',Body of post/submission
+5,subreddit,int64,Binarized,"Subreddit to which the post/submission belongs (1=Beatles, 0=Queen)"
+6,title,object,Nulls replaced with '-',Title of post/submission
+7,author_full,object,None,Combined: 'author' and 'author_flair_text'
+8,all_text,object,None,Combined: 'selftext' and 'title'
+9,tokenized_selftext,object,Text data: tokenized with regular expression,Tokenized 'selftext'
+10,tokenized_title,object,Text data: tokenized with regular expression,Tokenized 'title'
+11,tokenized_all_text,object,Text data: tokenized with regular expression,Tokenized 'all_text'
+12,lemmatized_tokenized_selftext,object,"Text data: tokenized with regular expression, lemmatized with WordNetLemmatizer()",Lemmatized 'tokenized_selftext'
+13,lemmatized_tokenized_title,object,"Text data: tokenized with regular expression, lemmatized with WordNetLemmatizer()",Lemmatized 'tokenized_title'
+14,lemmatized_tokenized_all_text,object,"Text data: tokenized with regular expression, lemmatized with WordNetLemmatizer()",Lemmatized 'tokenized_all_text'
+15,stemmatized_tokenized_selftext,object,"Text data: tokenized with regular expression, stemmatized with PorterStemmer()",Stemmatized 'tokenized_selftext'
+16,stemmatized_tokenized_title,object,"Text data: tokenized with regular expression, stemmatized with PorterStemmer()",Stemmatized 'tokenized_title'
+17,stemmatized_tokenized_all_text,object,"Text data: tokenized with regular expression, stemmatized with PorterStemmer()",Stemmatized 'tokenized_all_text'
